@@ -1019,16 +1019,6 @@ bool CalibrationPresetPage::is_filament_in_blacklist(Preset* preset, std::string
             return true;
         }
     }
-    if (m_ext_spool_radiobox->GetValue()) {
-        if (m_cali_mode == CalibMode::Calib_PA_Line && m_cali_method == CalibrationMethod::CALI_METHOD_AUTO) {
-            std::string filamnt_type;
-            preset->get_filament_type(filamnt_type);
-            if (filamnt_type == "TPU") {
-                error_tips = _u8L("TPU is not supported for Flow Dynamics Auto-Calibration.");
-                return false;
-            }
-        }
-    }
     return true;
 }
 
