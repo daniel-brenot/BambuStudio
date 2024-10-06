@@ -4,18 +4,6 @@
   "blacklist": [
     {
       "vendor": "Third Party",
-      "type": "TPU",
-      "action": "prohibition",
-      "description": "TPU: not supported"
-    },
-    {
-      "vendor": "Bambulab",
-      "type": "TPU",
-      "action": "prohibition",
-      "description": "TPU: not supported"
-    },
-    {
-      "vendor": "Third Party",
       "type": "PVA",
       "action": "warning",
       "description": "PVA: flexible"
